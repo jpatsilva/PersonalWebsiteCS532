@@ -1,0 +1,80 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #8c0b42;
+}
+
+li {
+	float: left;;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: gray;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: whitesmoke;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: #8a161b;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+
+  .dropdown-content a:hover {
+	background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+nav li > ul li {
+	display: block;
+}
+
+nav  li > ul li a {
+	color: white;
+	display: block;
+	line-height: 2em;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+/* Change the background color when mouse over items */
+nav li:hover {
+	background-color: #666;
+}
+
+/* display the submenu on mouse over main menu item*/
+nav li:hover > ul{
+	position:absolute;
+	display : block;
+}
