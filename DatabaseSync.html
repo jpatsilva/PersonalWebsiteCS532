@@ -2,10 +2,102 @@
     <title>Individual Assignment: Personal Website</title>
 	<link rel="stylesheet" href="css/individual-site.css">
 </head>
+<body>
+    <ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Projects and Hobbies</a>
+			<div class="dropdown-content">
+				<a href="DatabaseSync.html">Database Synchronize</a>
+				<a href="SecureKeyGenerate.html">Secure Key Generation</a>
+				<a href="Grass-and-Golf.html">Hobbies</a>
+			</div>
+		</li>
+		<li><a href="contact.html">Contact Information</a></li>
+	</ul>
 
-<h1>Database Synchronize</h1>
+<h1>Database Synchronization and Integrity</h1>
 <h2>Background</h2>
 <p>
-    Database synchronization is needed between two production databases. Users enter data into one database. Manufacturing personnel use the other database 
-    to assemble a unit consisting of several electronic parts.  
+    Database synchronization is needed between two production databases. One database is used to procure parts based on design specification. The other database is used to manufacture 
+    the various design boards using the parts that are available initially input and approved in the first database. Design engineers select parts with desired specification. These parts
+    are approved for use and committed to the design database. Users in a manufacturing capacity use these approved parts to manufacture the desired board. These two databases are large 
+    and kept seperate to eliminate the use of non-approved parts. These parts available to manufacturing have been critically vetted. My task was to get the contents of the first database
+    daily and compare with the previous days contents. If any changes are detected, XML is produced for the part containing the change. Changes can include any specification that may have 
+    changed or a completely new part or a deleted part. The information obtained from the comparison is put on a devoted share to include seperation folders to indicate modifications, new,
+    and deleted parts. Log information regarding the raw extract, availability of resources, run time information are all collected and placed on the share for access and use by the manufacturing
+    people. A script is run daily on the share populated by the application. If changes are found, appropriate actions are taken to synchronize the manufacturing database with the design
+    database. This process ensures the two databases are in synch.  
 </p>
+<table>
+    <tr>
+        <td colspan="2" style="padding:5px;text-align:center;background-color:#8c0b42;" color="white">
+            <p style="color:white">Tools Used to Implement</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Integrated Development Environment (IDE)
+        </td>
+        <td>
+            Eclipse
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Software Language Used
+        </td>
+        <td>
+            Java
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Backend Database
+        </td>
+        <td>
+            Oracle
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Marshalling and Unmarshalling Library Used
+        </td>
+        <td>
+            JAXB
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Front End Used
+        </td>
+        <td>
+            N/A this is a console application run as a daily task
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Operating System Development Environment
+        </td>
+        <td>
+            Windows 10
+        </td>
+    </tr>
+</table>
+<h2>
+    Implemenation and Deployment
+</h2>
+<p>
+    Eclipse was used to develop and build my application. The application is not making use of <a href="https://www.atlassian.com/devops">DevOps</a>. The application is placed on a server
+    with access to both of the environments that contain the design database and the manufacturing database. The application is run once daily. Alets have been implemented for resource 
+    issues like share not available, task did not run to completion, and design database not available.
+</p>
+<h2>
+    Operations Status
+</h2>
+<p>
+    The application has been used for two years now. The process has been refined and running smoothly at this point. Design changes typically come in spurts. No issues with the application
+    have arisen. Occasionally, share resources and the script which uses changes produced by my application to insert into the manufacturing database have been encountered. Overall, the project
+    to date is a useful application.
+</p>
+</body>
