@@ -107,13 +107,20 @@ li.dropdown {
 	text-align: left;
   }
 
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
 	background-color: white;
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
   }
+
+.address table, th {
+	background-color: #8c0b42;
+	border: 1px;
+	border-collapse: collapse;
+	color: white;
+}
 
 table, th, td {
 	border: 1px solid black;

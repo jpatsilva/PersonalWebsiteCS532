@@ -1,38 +1,91 @@
 <head>
     <link rel="stylesheet" href="css/individual-site.css">
 </head>
-<h1>Below is how to contact me</h1><br>
-<table style="width:800px">
-    <tr>
-        <th style="width:20%">Source</th>
-        <th>User Name</th>
-        <th>Note</th>
-    </tr>
-    <tr>
-        <td>Email</td>
-        <td><a href="mailto:pfivel@gmail.com">pfivel@gmail.com</a></td>
-        <td>Personal email address</td>
-    </tr>
-    <tr>
-        <td>Email</td>
-        <td><a href="mailto:jpsilva@nmsu.edu">jpsilva@nmsu.edu</a></td>
-        <td>School email address</td>
-    </tr>
-    <tr>
-        <td>Twitter</td><td>@PSilva1984</td><td>Twitter account</td>
-    </tr>
-</table><br>
-<table style="width:300px">
-    <tr>
-        <th>Home Address</th>
-    </tr>
-    <tr>
-        <td>5737 Rio Pinos Road NE</td>
-    </tr>
-    <tr>
-        <td>Rio Rancho, NM</td>
-    </tr>
-    <tr>
-        <td>87144</td>
-    </tr>
-</table>
+<body>
+    <ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Projects and Hobbies</a>
+			<div class="dropdown-content">
+				<a href="DatabaseSync.html">Database Synchronize</a>
+				<a href="SecureKeyGenerate.html">Secure Key Generation</a>
+				<a href="Grass-and-Golf.html">Hobbies</a>
+			</div>
+		</li>
+		<li><a href="contact.html">Contact Information</a></li>
+	</ul>
+    <h1>Contact Information</h1>
+    <table style="width:800px">
+        <tr>
+            <th style="width:20%">Source</th>
+            <th>Username</th>
+            <th>Note</th>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><a href="mailto:pfivel@gmail.com">pfivel@gmail.com</a></td>
+            <td>Personal email address</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><a href="mailto:jpsilva@nmsu.edu">jpsilva@nmsu.edu</a></td>
+            <td>School email address</td>
+        </tr>
+        <tr>
+            <td>Twitter</td>
+            <td>@PSilva1984</td><td>Twitter account</td>
+        </tr>
+        <tr>
+            <td>
+                Cell Phone
+            </td>
+            <td>
+                505-217-5017
+            </td>
+            <td>
+                Personal Cell Phone
+            </td>
+        </tr>
+    </table><br>
+    <table class="address" style="width:300px">
+        <tr>
+            <th>Home Address</th>
+        </tr>
+        <tr>
+            <td>5737 Rio Pinos Road NE</td>
+        </tr>
+        <tr>
+            <td>Rio Rancho, NM</td>
+        </tr>
+        <tr>
+            <td>87144</td>
+        </tr>
+    </table>
+
+<h2>Bella and Maddie Playing at Home</h2>
+
+<button onclick="playVid()" type="button">Play</button>
+<button onclick="pauseVid()" type="button">Pause</button><br><br>
+
+<video id="dogs" width="320" height="176">
+  <source src="videos/Bell-Maddie.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<script> 
+var vid = document.getElementById("dogs"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+}
+</script>
+<br>
+
+<br><footer style="padding: 1px;text-align:center;background-color:#8c0b42;" color="white">
+    <p style="color:white">New Mexico State University MSEE Student</p>
+</footer>
+</body>
