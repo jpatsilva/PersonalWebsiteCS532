@@ -29,7 +29,28 @@
         I have a good friend from my home town. His name is Gary. We have played a lot of golf in the last three years. We've Played in Arizona, Nevada, and all around New Mexico. We've played in golf tournaments at <a href="https://golf.nmsu.edu/">New Mexico State University Golf Course</a><br>
         and <a href="https://www.picachohills.com/">Picacho Hills Country Club</a> in Las Cruces.
     </p>
-    <h3></h3>
+    <h3>Summertime in Las Vegas, NV</h3>
+    <button onclick="playVid()" type="button">Play</button>
+    <button onclick="pauseVid()" type="button">Pause</button><br>
+
+    <video id="golf" width="400" height="200">
+        <source src="videos/golf.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <script> 
+        var vid = document.getElementById("golf"); 
+
+        function playVid() { 
+        vid.play(); 
+        } 
+
+        function pauseVid() { 
+        vid.pause(); 
+        }
+    </script>
+    <br>
+
     <h2>Grass</h2>
     <p>
         I enjoy everything about my grass. I recently purchased a <a href="images/reelMower-1.jpg">reel mower</a> . A reel mower usually has 5 to 10 blades which cut grass in a scissor action. The reel blades rotate and scissor the grass blades<br>
