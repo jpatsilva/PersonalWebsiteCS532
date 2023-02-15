@@ -9,13 +9,17 @@
   }
 
 @media only screen and (min-device-width:375px) {
+	#profile {
+		float: left;
+		width: 30%
+	}
 	#content {
 		float: right ;
-		width: 70% ;
+		width: 65% ;
 	}
 	#menu {
-		float: left;
-		width: 30%;
+		clear: both;
+		width: 100%;
 	}
 	#contactmenu {
 		float: none;
@@ -39,11 +43,14 @@
 }
 
 /* When the size of the screen goes below 600 pixels stack the columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	#menu {
 		width: 100%;
 	}
 	#content {
+		width: 100%;
+	}
+	#profile {
 		width: 100%;
 	}
 }
@@ -56,6 +63,10 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
+	#profile {
+		float: none;
+		width: 100%;
+	}
 	#content {
 		float: none ;
 		width: 100% ;
@@ -99,6 +110,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	background-color: #8c0b42;
 }
 
 li {
