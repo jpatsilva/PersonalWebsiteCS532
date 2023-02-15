@@ -1,3 +1,7 @@
+:root {
+	color-scheme: dark light;
+}
+
 /* Proposed CSS standard */
 @viewport {
 	width: device-width ;
@@ -34,6 +38,7 @@
 	}
 }
 
+/* When the size of the screen goes below 600 pixels stack the columns */
 @media screen and (max-width: 600px) {
 	#menu {
 		width: 100%;

@@ -19,6 +19,8 @@
 	</ul>
 <!-- This is a project from work -->
 <h1>Database Synchronization and Integrity</h1>
+<img src="images/DevOps.png" alt="Security Key image"
+				style="width:60%; height:60%;">
 <h2>Background</h2>
 <p>Database synchronization is needed between two production databases. One database is used to procure parts based on design specification. The other database is used to manufacture 
     the various design boards using the parts that are available initially input and approved in the first database. Design engineers select parts with desired specification. These parts
@@ -78,6 +80,22 @@
         </td>
     </tr>
     <tr>
+        <td>
+            Build Tool
+        </td>
+        <td>
+            <a href="https://www.jenkins.io/">Jenkins</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Repository
+        </td>
+        <td>
+            <a href="https://about.gitlab.com/">GitLab</a>
+        </td>
+    </tr>
+    <tr>
     <td>
         Operating System
     </td>
@@ -91,9 +109,9 @@
     Implemenation and Deployment
 </h2>
 <p>
-    Eclipse was used to develop and build my application. The application is not making use of <a href="https://www.atlassian.com/devops">DevOps</a>. The application is placed on a server
-    with access to both of the environments that contain the design database and the manufacturing database. The application is run once daily. Alets have been implemented for resource 
-    issues like share not available, task did not run to completion, and design database not available.
+    Eclipse is used to develop and build my application. The application is making use of <a href="https://www.atlassian.com/devops">DevOps</a>. Jenkins is used as the automated 
+    build tool. The application is automatically built and deployed when a change is committed to main in the Git repository. The application is placed on a server with access to both of the environments that contain the design database and the manufacturing database. The application is run once
+    daily. Alets have been implemented for resource issues like share not available, task did not run to completion, and design database not available.
 </p>
 <!-- This is a very high level description how the software is used -->
 <h2>
