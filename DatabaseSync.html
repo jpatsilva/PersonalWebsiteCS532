@@ -4,7 +4,7 @@
     <!-- Demonstrates the use of a drop downn menu item and its submenu with links the various pages -->
 	<link rel="stylesheet" href="css/individual-site.css">
 </head>
-<body>
+<div id="dbcontent">
     <ul>
 		<li><a href="index.html">Home</a></li>
 		<li class="dropdown">
@@ -20,8 +20,7 @@
 <!-- This is a project from work -->
 <h1>Database Synchronization and Integrity</h1>
 <h2>Background</h2>
-<p>
-    Database synchronization is needed between two production databases. One database is used to procure parts based on design specification. The other database is used to manufacture 
+<p>Database synchronization is needed between two production databases. One database is used to procure parts based on design specification. The other database is used to manufacture 
     the various design boards using the parts that are available initially input and approved in the first database. Design engineers select parts with desired specification. These parts
     are approved for use and committed to the design database. Users in a manufacturing capacity use these approved parts to manufacture the desired board. These two databases are large 
     and kept seperate to eliminate the use of non-approved parts. These parts available to manufacturing have been critically vetted. My task was to get the contents of the first database
@@ -105,7 +104,8 @@
     have arisen. Occasionally, share resources and the script which uses changes produced by my application to insert into the manufacturing database have been encountered. Overall, the project
     to date is a useful application.
 </p>
+</div>
+<!-- Footer used on every page of this website -->
 <div id="footer">
 	<p>New Mexico State University MSEE Student</p>
 </div>
-</body>
