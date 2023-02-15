@@ -1,17 +1,22 @@
+/* This takes the users current system setting for light or dark */
 :root {
 	color-scheme: dark light;
 }
 
-/* Proposed CSS standard */
+/* This is a proposed CSS standard. */
 @viewport {
 	width: device-width ;
 	zoom: 1.0 ;
   }
 
+  /* This looks for the device's minimum width of 375 pixels which is the iPhone's portrait width */
 @media only screen and (min-device-width:375px) {
 	#profile {
 		float: left;
-		width: 30%
+		width: 30%;
+		list-style:none;
+		padding:1px; 
+		line-height:24px;
 	}
 	#content {
 		float: right ;
@@ -42,7 +47,7 @@
 	}
 }
 
-/* When the size of the screen goes below 600 pixels stack the columns */
+/* When the size of the screen goes below 600 pixels, stack the columns below */
 @media screen and (max-width: 900px) {
 	#menu {
 		width: 100%;
@@ -55,9 +60,8 @@
 	}
 }
 
-/* ----------- iPhone ----------- */
-
-/* Mobile Phone Portrait */
+/* The settings below are for iPhones */
+/* Portrait orientation for iphone */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -81,16 +85,19 @@
 	  }
 }
 
-/* Mobile Phone Landscape */
+/* Landscape orientation for iphone */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+  and (orientation: landscape) {
 
-	
+	/* Not sure what is needed here in landscape orientation */
+
 }
 
+/* For devices larger than 375 pixels and smaller than 812 pixels */
+/* Medium sized devices */
 @media only screen
 	and (min-device-width: 375px)
 	and (max-device-width: 812px)
@@ -105,7 +112,18 @@
     }
 }
 
-ul {
+/* Style for the profile's class unordered list */
+#profile ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+	/* background-color:#8c0b42; */
+}
+
+/* Style for the menu class unordered list */
+#menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -113,11 +131,13 @@ ul {
 	background-color: #8c0b42;
 }
 
+/* This is for general list items */
 li {
 	float: left;
-	background-color: #8c0b42;
+	/* background-color: #8c0b42; */
 }
 
+/* This is for list items anchors and dropbtn class */
 li a, .dropbtn {
 	display: inline-block;
 	color: white;
@@ -126,14 +146,12 @@ li a, .dropbtn {
 	text-decoration: none;
 }
 
+/* This is for list items anchor hover and dropbtn hover style */
 li a:hover, .dropdown:hover .dropbtn {
 	background-color: gray;
 }
 
-li.dropdown {
-	display: inline-block;
-}
-
+/* Styling for the dropdown-content class */
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -143,6 +161,7 @@ li.dropdown {
 	z-index: 1;
 }
 
+/* Styling for the dropdown-content anchor */
 .dropdown-content a {
 	color: #8a161b;
 	text-decoration: none;
@@ -150,14 +169,17 @@ li.dropdown {
 	text-align: left;
   }
 
+  /* Styling for the dropdown-content anchor hover */
 .dropdown-content a:hover {
 	background-color: white;
 }
 
+/* Styling for the dropdown hover and dropdown-content */
 .dropdown:hover .dropdown-content {
 	display: block;
   }
 
+  /* Styling for the address class and the table and table header underneath the address class */
 .address table, th {
 	background-color: #8c0b42;
 	border: 1px;
@@ -165,21 +187,10 @@ li.dropdown {
 	color: white;
 }
 
+/* Styling for the general table, table header, and table data */
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
-}
-
-nav li > ul li {
-	display: block;
-}
-
-nav  li > ul li a {
-	color: white;
-	display: block;
-	line-height: 2em;
-	padding: 0.5em 2em;
-	text-decoration: none;
 }
 
 /* Change the background color when mouse over top level menu items */
