@@ -1,27 +1,30 @@
 <head>
     <link rel="stylesheet" href="css/individual-site.css">
 </head>
-<body>
+
     <!-- Style sheet used for this website. Really just a demonstration of the use of a style sheet -->
     <!-- Demonstrates the use of a drop downn menu item and its submenu with links the various pages -->
-    <ul>
-		<li><a href="index.html">Home</a></li>
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">Projects and Hobbies</a>
-			<div class="dropdown-content">
-				<a href="DatabaseSync.html">Database Synchronize</a>
-				<a href="SecureKeyGenerate.html">Secure Key Generation</a>
-				<a href="Grass-and-Golf.html">Hobbies</a>
-			</div>
-		</li>
+<div id="contactmenu">
+    <!-- Style sheet used for this website. Really just a demonstration of the use of a style sheet -->
+	<!-- Demonstrates the use of a drop downn menu item and its submenu with links the various pages -->
+	<ul>
+    	<li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Projects and Hobbies</a>
+                <div class="dropdown-content">
+                    <a href="DatabaseSync.html">Database Synchronize</a>
+                    <a href="SecureKeyGenerate.html">Secure Key Generation</a>
+                    <a href="Grass-and-Golf.html">Hobbies</a>
+                </div>
+            </li>
 		<li><a href="contact.html">Contact Information</a></li>
 	</ul>
     <h1>Contact Information</h1>
-    <table style="width:800px">
+    <table style="width:50%">
         <tr>
             <th style="width:20%">Source</th>
-            <th>Username</th>
-            <th>Note</th>
+            <th style="width:40%">Username</th>
+            <th style="width:40%">Note</th>
         </tr>
         <tr>
             <td>Email</td>
@@ -49,7 +52,7 @@
             </td>
         </tr>
     </table><br>
-    <table class="address" style="width:300px">
+    <table class="address" style="width:23%">
         <tr>
             <th>Home Address</th>
         </tr>
@@ -65,7 +68,6 @@
     </table>
 <!-- Used to demonstrate the insertion of a short video with a Play and Pause button -->
 <!-- The video is placed in the body of the page. -->
-
 <!-- Title of the video -->
 <h2>Bella and Maddie Playing at Home</h2>
 
@@ -91,10 +93,8 @@ function pauseVid() {
   vid.pause(); 
 }
 </script>
-<br>
-
+</div>
 <!-- Footer used on all pages of this website -->
-<br><footer style="padding: 1px;text-align:center;background-color:#8c0b42;" color="white">
-    <p style="color:white">New Mexico State University MSEE Student</p>
-</footer>
-</body>
+<div id="footer">
+	<p>New Mexico State University MSEE Student</p>
+</div>
