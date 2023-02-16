@@ -73,15 +73,15 @@
 	#content {
 		float: none ;
 		width: 100% ;
-	  }
-	  #menu {
+	}
+	#menu {
 		float: none ;
 		width: 100% ;
-	  }
-	  #contact {
+	}
+	#contact {
 		float: none;
 		width: 100%;
-	  }
+	 }
 }
 
 /* Landscape orientation for iphone */
