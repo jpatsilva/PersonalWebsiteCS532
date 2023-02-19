@@ -76,27 +76,12 @@
 <!-- Title of the video -->
 <h2>Bella and Maddie Playing at Home</h2>
 
-<!-- Play and Pause video buttons -->
-<button onclick="playVid()" type="button">Play</button>
-<button onclick="pauseVid()" type="button">Pause</button><br><br>
-
 <!-- The source of the video. Contains the location of the video relative to the landing page -->
-<video id="dogs" width="320" height="176">
+<video id="dogs" width="320" height="176" controls>
   <source src="videos/Bell-Maddie.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
-<!-- The scripts that contain functions for the play and pause of the video -->
-<script> 
-var vid = document.getElementById("dogs"); 
-
-function playVid() { 
-  vid.play(); 
-} 
-
-function pauseVid() { 
-  vid.pause(); 
-}
 </script>
 </div>
 <!-- Footer used on all pages of this website -->
